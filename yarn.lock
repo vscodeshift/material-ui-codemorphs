@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@babel/cli@^7.1.5":
+"@babel/cli@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.8.3.tgz#121beb7c273e0521eb2feeb3883a2b7435d12328"
   integrity sha512-K2UXPZCKMv7KwWy9Bl4sa6+jTNP7JyDiHKzoOiUUygaEDbC60vaargZDnO9oFMvlq8pIKOOyUUgeMYrsaN9djA==
@@ -857,7 +857,7 @@
     "@babel/parser" "^7.8.3"
     "@babel/types" "^7.8.3"
 
-"@babel/traverse@^7.0.0", "@babel/traverse@^7.4.3", "@babel/traverse@^7.8.3":
+"@babel/traverse@^7.0.0", "@babel/traverse@^7.4.3", "@babel/traverse@^7.4.5", "@babel/traverse@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.8.3.tgz#a826215b011c9b4f73f3a893afbc05151358bf9a"
   integrity sha512-we+a2lti+eEImHmEXp7bM9cTxGzxPmBiVJlLVD+FuuQMeeO7RaDbutbgeheDkw+Xe3mCfJHnGOWLswT74m2IPg==
@@ -1333,9 +1333,9 @@
     tsutils "^3.17.1"
 
 "@vscodeshift/apply-jscodeshift@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@vscodeshift/apply-jscodeshift/-/apply-jscodeshift-1.0.1.tgz#d76dad4aaf7005521b4854435993989904c16289"
-  integrity sha512-5eZ7Gdz3e1qK34imNw/OVuPUyoK7coI+dPp2QCo4vYg03oakrSUpoP5l7UEuPWPwN2WKWbYQDWQaaFwF/QzCog==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@vscodeshift/apply-jscodeshift/-/apply-jscodeshift-1.0.5.tgz#b4aac67dd01569ccd2654ac2f73ce3a7f9a8e7bf"
+  integrity sha512-Djr5BtudeY+sxa2VbOA/3DvF7Z3/8FIv7Zb5uPRTk0rYhRjzPqPmwvwlJpBmTTHPMAK4IxFylRyUHF9xNnHaCA==
   dependencies:
     "@babel/runtime" "^7.1.5"
 
@@ -1673,6 +1673,11 @@ assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
   integrity sha1-WWZ/QfrdTyDMvCu5a41Pf3jsA2c=
+
+ast-types@0.11.7:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.11.7.tgz#f318bf44e339db6a320be0009ded64ec1471f46c"
+  integrity sha512-2mP3TwtkY/aTv5X3ZsMpNAbOnyoC/aMJwJSoaELPkHId0nSQgFcnU4dRW3isxiz7+zBexk0ym3WNVjMiQBnJSw==
 
 ast-types@0.12.1:
   version "0.12.1"
@@ -5093,6 +5098,52 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
+jscodeshift-add-imports@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/jscodeshift-add-imports/-/jscodeshift-add-imports-1.0.3.tgz#1e27ee28e284b3be3db22853738b5bcb04a6bf79"
+  integrity sha512-h7zZ6HS+k2hlXYtx3sFoMAOZq0yGnDfCAHudZqw0KnF1qV30wcXwN9bO5v8zRLUhoUibli8xx3wbT2QDGc+ung==
+  dependencies:
+    "@babel/traverse" "^7.4.5"
+    jscodeshift-find-imports "^1.0.2"
+
+jscodeshift-find-imports@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/jscodeshift-find-imports/-/jscodeshift-find-imports-1.0.2.tgz#27c36ecc5f7572829164bab5092c24ee07ff8ef5"
+  integrity sha512-O6lbEWWjL/mwwxNcwy/ea2X6YCqE5OhaqTPy2rBRkWJGD/ESXYNoLL7En/LXwe4IbJQOcaMbGIGOGzmxIGR5xQ==
+  dependencies:
+    jscodeshift "^0.6.4"
+
+jscodeshift-paths-in-range@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jscodeshift-paths-in-range/-/jscodeshift-paths-in-range-1.0.0.tgz#534f1c95857601f517b144af1d6718a3e2728693"
+  integrity sha512-0PFCzk5FLlcpUAbfTXHtsE+MqiSqcEMHII2chVbhliguOFo5oQCKiYLexqYwHXfROycOQf8ZFW3gWUSTpgwa1g==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+
+jscodeshift@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/jscodeshift/-/jscodeshift-0.6.4.tgz#e19ab86214edac86a75c4557fc88b3937d558a8e"
+  integrity sha512-+NF/tlNbc2WEhXUuc4WEJLsJumF84tnaMUZW2hyJw3jThKKRvsPX4sPJVgO1lPE28z0gNL+gwniLG9d8mYvQCQ==
+  dependencies:
+    "@babel/core" "^7.1.6"
+    "@babel/parser" "^7.1.6"
+    "@babel/plugin-proposal-class-properties" "^7.1.0"
+    "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
+    "@babel/preset-env" "^7.1.6"
+    "@babel/preset-flow" "^7.0.0"
+    "@babel/preset-typescript" "^7.1.0"
+    "@babel/register" "^7.0.0"
+    babel-core "^7.0.0-bridge.0"
+    colors "^1.1.2"
+    flow-parser "0.*"
+    graceful-fs "^4.1.11"
+    micromatch "^3.1.10"
+    neo-async "^2.5.0"
+    node-dir "^0.1.17"
+    recast "^0.16.1"
+    temp "^0.8.1"
+    write-file-atomic "^2.3.0"
+
 jscodeshift@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/jscodeshift/-/jscodeshift-0.7.0.tgz#4eee7506fd4fdacbd80340287d61575af991fdab"
@@ -5211,9 +5262,9 @@ kind-of@^5.0.0:
   integrity sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw==
 
 kind-of@^6.0.0, kind-of@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
-  integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
+  integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
 latest-version@^3.0.0:
   version "3.1.0"
@@ -5901,6 +5952,17 @@ matcher@^1.0.0:
   integrity sha512-+BmqxWIubKTRKNWx/ahnCkk3mG8m7OturVlqq6HiojGJTd5hVYbgZm6WzcYPCoB+KBT4Vd6R7WSRG2OADNaCjg==
   dependencies:
     escape-string-regexp "^1.0.4"
+
+material-ui-codemorphs@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/material-ui-codemorphs/-/material-ui-codemorphs-2.0.2.tgz#cf16bba5614ee844f0ef6eb4ad7dfbd40ea798a1"
+  integrity sha512-5nTXteAE0MEvAfRCawHLBv+mulnD8QCNzRJxRnHsieT1eISJ6od6GnSxx9mGNlrRxU911Xee4astgvpYJ/vkGg==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+    jscodeshift "^0.7.0"
+    jscodeshift-add-imports "^1.0.3"
+    jscodeshift-paths-in-range "^1.0.0"
+    lodash "^4.17.15"
 
 mdurl@^1.0.1:
   version "1.0.1"
@@ -7545,6 +7607,16 @@ recast@0.17.2:
   integrity sha512-YHFvn4rBXl8eIjALjUiOV/AP3xFpyGNGNHDw9mAncAWuIdgnBKjbZQ9+P3VlsKcNaNapRVFlTEX1dvDRlYwyxg==
   dependencies:
     ast-types "0.12.1"
+    esprima "~4.0.0"
+    private "~0.1.5"
+    source-map "~0.6.1"
+
+recast@^0.16.1:
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/recast/-/recast-0.16.2.tgz#3796ebad5fe49ed85473b479cd6df554ad725dc2"
+  integrity sha512-O/7qXi51DPjRVdbrpNzoBQH5dnAPQNbfoOFyRiUwreTMJfIHYOEBzwuH+c0+/BTSJ3CQyKs6ILSWXhESH6Op3A==
+  dependencies:
+    ast-types "0.11.7"
     esprima "~4.0.0"
     private "~0.1.5"
     source-map "~0.6.1"

@@ -1,9 +1,9 @@
 {
-  "name": "@vscodeshift/extension-skeleton",
+  "name": "@vscodeshift/material-ui-codemorphs",
   "version": "0.0.0-development",
-  "displayName": "@vscodeshift/extension-skeleton",
+  "displayName": "@vscodeshift/material-ui-codemorphs",
   "publisher": "vscodeshift",
-  "description": "skeleton for a VSCode extension for applying JSCodeshift transforms",
+  "description": "sweet codemod commands for everyday work with Material UI",
   "engines": {
     "vscode": "^1.40.0"
   },
@@ -11,14 +11,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.YOUR.COMMAND.HERE"
+    "onCommand:extension.addStyles",
+    "onCommand:extension.setupSystem"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.YOUR.COMMAND.HERE",
-        "title": "YOUR TITLE HERE"
+        "command": "extension.addStyles",
+        "title": "Material UI Codemorphs: Wrap in withStyles"
+      },
+      {
+        "command": "extension.setupSystem",
+        "title": "Material UI Codemorphs: Box (set up @material-ui/system)"
       }
     ]
   },
@@ -46,13 +51,13 @@
     ],
     "prepare": {
       "path": "semantic-release-vsce",
-      "packageVsix": "@vscodeshift/extension-skeleton.vsix"
+      "packageVsix": "@vscodeshift/material-ui-codemorphs.vsix"
     },
     "publish": [
       "semantic-release-vsce",
       {
         "path": "@semantic-release/github",
-        "assets": "@vscodeshift/extension-skeleton.vsix"
+        "assets": "@vscodeshift/material-ui-codemorphs.vsix"
       }
     ]
   },
@@ -100,21 +105,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vscodeshift/extension-skeleton.git"
+    "url": "https://github.com/vscodeshift/material-ui-codemorphs.git"
   },
   "keywords": [
     "vscode",
     "jscodeshift",
-    "codemods"
+    "codemods",
+    "material-ui"
   ],
   "author": "Andy Edwards",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vscodeshift/extension-skeleton/issues"
+    "url": "https://github.com/vscodeshift/material-ui-codemorphs/issues"
   },
-  "homepage": "https://github.com/vscodeshift/extension-skeleton#readme",
+  "homepage": "https://github.com/vscodeshift/material-ui-codemorphs#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
+    "@babel/cli": "^7.8.3",
     "@babel/core": "^7.1.6",
     "@babel/node": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
@@ -166,7 +172,8 @@
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "@vscodeshift/apply-jscodeshift": "^1.0.1",
-    "jscodeshift": "^0.7.0"
+    "jscodeshift": "^0.7.0",
+    "material-ui-codemorphs": "^2.0.1"
   },
   "renovate": {
     "extends": [
