@@ -6,14 +6,24 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/vscodeshift.material-ui-codemorphs)
 
-sweet codemod commands for everyday work with Material UI
+sweet codemod commands for everyday work with Material UI ✨
 
 # Commands
 
 ## Wrap in withStyles
 
+Position the cursor inside a funcitonal component before running this command.
+Wraps the functional component in `withStyles`,
+adds a `const styles = (theme: Theme) => ({ })` declaration,
+and adds a `classes` type annotation and prop destructuring if possible.
+
+Supports Flow, TypeScript, and plain JS!
+
 ![withStyles screencap](withStyles.gif)
 
 ## Box (Set up @material-ui/system)
+
+Creates/updates the declaration for `Box` based upon which props you pass to
+`<Box>` elements in your code.
 
 ![box screencap](box.gif)
