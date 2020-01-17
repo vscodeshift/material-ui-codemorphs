@@ -51,13 +51,13 @@
     ],
     "prepare": {
       "path": "semantic-release-vsce",
-      "packageVsix": "@vscodeshift/material-ui-codemorphs.vsix"
+      "packageVsix": "material-ui-codemorphs.vsix"
     },
     "publish": [
       "semantic-release-vsce",
       {
         "path": "@semantic-release/github",
-        "assets": "@vscodeshift/material-ui-codemorphs.vsix"
+        "assets": "material-ui-codemorphs.vsix"
       }
     ]
   },
