@@ -1,8 +1,9 @@
 {
-  "name": "vscode-extension-skeleton",
+  "name": "@vscodeshift/extension-skeleton",
   "version": "0.0.0-development",
-  "displayName": "Dude, Where's My Module?",
-  "description": "my personal skeleton for a VSCode extension",
+  "displayName": "@vscodeshift/extension-skeleton",
+  "publisher": "vscodeshift",
+  "description": "skeleton for a VSCode extension for applying JSCodeshift transforms",
   "engines": {
     "vscode": "^1.40.0"
   },
@@ -10,14 +11,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.helloWorld"
+    "onCommand:extension.YOUR.COMMAND.HERE"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
+        "command": "extension.YOUR.COMMAND.HERE",
+        "title": "YOUR TITLE HERE"
       }
     ]
   },
@@ -45,13 +46,13 @@
     ],
     "prepare": {
       "path": "semantic-release-vsce",
-      "packageVsix": "vscode-extension-skeleton.vsix"
+      "packageVsix": "@vscodeshift/extension-skeleton.vsix"
     },
     "publish": [
       "semantic-release-vsce",
       {
         "path": "@semantic-release/github",
-        "assets": "vscode-extension-skeleton.vsix"
+        "assets": "@vscodeshift/extension-skeleton.vsix"
       }
     ]
   },
@@ -99,18 +100,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jedwards1211/vscode-extension-skeleton.git"
+    "url": "https://github.com/vscodeshift/extension-skeleton.git"
   },
   "keywords": [
     "vscode",
-    "extension"
+    "jscodeshift",
+    "codemods"
   ],
   "author": "Andy Edwards",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jedwards1211/vscode-extension-skeleton/issues"
+    "url": "https://github.com/vscodeshift/extension-skeleton/issues"
   },
-  "homepage": "https://github.com/jedwards1211/vscode-extension-skeleton#readme",
+  "homepage": "https://github.com/vscodeshift/extension-skeleton#readme",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
@@ -132,6 +134,7 @@
     "@jedwards1211/eslint-config-typescript": "^1.0.0",
     "@types/chai": "^4.2.0",
     "@types/glob": "^7.1.1",
+    "@types/jscodeshift": "^0.6.3",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.12.6",
     "@types/vscode": "^1.40.0",
@@ -161,7 +164,9 @@
     "vscode-test": "^1.2.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.1.5"
+    "@babel/runtime": "^7.1.5",
+    "@vscodeshift/apply-jscodeshift": "^1.0.1",
+    "jscodeshift": "^0.7.0"
   },
   "renovate": {
     "extends": [
