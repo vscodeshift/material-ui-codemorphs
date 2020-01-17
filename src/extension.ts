@@ -1,6 +1,8 @@
 import * as vscode from 'vscode'
 import applyTransform from '@vscodeshift/apply-jscodeshift'
 
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 export function activate(context: vscode.ExtensionContext): void {
   context.subscriptions.push(
     vscode.commands.registerCommand('extension.addStyles', () =>
