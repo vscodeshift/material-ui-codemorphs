@@ -5959,7 +5959,7 @@ matcher@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.4"
 
-material-ui-codemorphs@^2.1.0:
+material-ui-codemorphs@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/material-ui-codemorphs/-/material-ui-codemorphs-2.2.0.tgz#62ad5e67b3a84196edab76b3ff6ce4008fbfc72b"
   integrity sha512-KsAd6AmZdpF1lUAdKk3gxP9Pf1CgjcdL1VZVs1++VdmhDLVcMJObfyaORZztXFO5OKs9Hi74vBRJYniCwydeNg==
