@@ -5959,10 +5959,10 @@ matcher@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.4"
 
-material-ui-codemorphs@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/material-ui-codemorphs/-/material-ui-codemorphs-2.2.0.tgz#62ad5e67b3a84196edab76b3ff6ce4008fbfc72b"
-  integrity sha512-KsAd6AmZdpF1lUAdKk3gxP9Pf1CgjcdL1VZVs1++VdmhDLVcMJObfyaORZztXFO5OKs9Hi74vBRJYniCwydeNg==
+material-ui-codemorphs@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/material-ui-codemorphs/-/material-ui-codemorphs-2.2.1.tgz#472815aa73218704520986c740b67596b1c3393a"
+  integrity sha512-eb5pTiQ52zKqgEEz5N9OZMCKpeWyFu2p0O46OfaSNZn9kmQzPw9q0tvid6XiO6J12hpE+6oQJVYsCwzlIIbzZw==
   dependencies:
     "@babel/runtime" "^7.1.5"
     find-root "^1.1.0"
