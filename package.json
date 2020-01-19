@@ -173,7 +173,7 @@
     "@babel/runtime": "^7.1.5",
     "@vscodeshift/apply-jscodeshift": "^1.0.1",
     "jscodeshift": "^0.7.0",
-    "material-ui-codemorphs": "^2.2.1"
+    "material-ui-codemorphs": "^2.2.4"
   },
   "renovate": {
     "extends": [
