@@ -50,9 +50,7 @@ const Consumer = () => <Test text="binding" />
 ```diff
 import * as React from 'react'
 
-+ import { withStyles } from '@material-ui/core/styles'
-+ import { Theme } from '@material-ui/core/styles/createMuiTheme'
-+ import { WithStyles } from '@material-ui/core'
++ import { withStyles, Theme, WithStyles } from '@material-ui/core/styles'
 
 - interface Props {
 + interface Props extends WithStyles<typeof styles> {
