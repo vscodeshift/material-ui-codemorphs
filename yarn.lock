@@ -3698,6 +3698,11 @@ find-npm-prefix@^1.0.2:
   resolved "https://registry.yarnpkg.com/find-npm-prefix/-/find-npm-prefix-1.0.2.tgz#8d8ce2c78b3b4b9e66c8acc6a37c231eb841cfdf"
   integrity sha512-KEftzJ+H90x6pcKtdXZEPsQse8/y/UnvzRKrOSQFprnrGaFuJ62fVkP34Iu2IYuMvyauCyoLTNkJZgrrGA2wkA==
 
+find-root@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
+  integrity sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==
+
 find-up@3.0.0, find-up@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
@@ -5954,12 +5959,13 @@ matcher@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.4"
 
-material-ui-codemorphs@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/material-ui-codemorphs/-/material-ui-codemorphs-2.0.2.tgz#cf16bba5614ee844f0ef6eb4ad7dfbd40ea798a1"
-  integrity sha512-5nTXteAE0MEvAfRCawHLBv+mulnD8QCNzRJxRnHsieT1eISJ6od6GnSxx9mGNlrRxU911Xee4astgvpYJ/vkGg==
+material-ui-codemorphs@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/material-ui-codemorphs/-/material-ui-codemorphs-2.1.0.tgz#e83debb848167cf37849338ffba3520d6523200b"
+  integrity sha512-sHsboGka4iyhoSoFAzhdZgac0h7i2o+PWKasnQf8RRSHsiaQIPMmPTqyNq7kp9uKDTqEuMe09Mb2YXjcUxvcXQ==
   dependencies:
     "@babel/runtime" "^7.1.5"
+    find-root "^1.1.0"
     jscodeshift "^0.7.0"
     jscodeshift-add-imports "^1.0.3"
     jscodeshift-paths-in-range "^1.0.0"
