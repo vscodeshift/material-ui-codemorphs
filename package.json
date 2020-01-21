@@ -1,7 +1,7 @@
 {
   "name": "material-ui-codemorphs",
   "version": "0.0.0-development",
-  "displayName": "Material UI Codemorphs",
+  "displayName": "Material-UI Codemorphs",
   "publisher": "vscodeshift",
   "description": "sweet codemod commands for everyday work with Material UI",
   "engines": {

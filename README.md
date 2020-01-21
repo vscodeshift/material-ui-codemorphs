@@ -12,7 +12,8 @@ sweet codemod commands for everyday work with Material UI ✨
 
 ## Wrap in withStyles
 
-Position the cursor inside a funcitonal component before running this command.
+Position the cursor inside a funcitonal component before running this command. (_Class components aren't supported yet_)
+
 Wraps the functional component in `withStyles`,
 adds a `const styles = (theme: Theme) => ({ })` declaration,
 and adds a `classes` type annotation and prop destructuring if possible.
@@ -40,9 +41,9 @@ interface Props {
   text: string
 }
 
-const Test = ({ text }: Props): React.ReactNode => <div>{text}</div>
-
-const Consumer = () => <Test text="binding" />
+const Test = ({ text }: Props): React.ReactNode => {
+  return <div>{text}</div>
+}
 ```
 
 ![withStyles command](withStyles.png)
@@ -59,13 +60,12 @@ import * as React from 'react'
 
 + const styles = (theme: Theme) => ({})
 
-- const Test = ({ text }: Props): React.ReactNode => <div>{text}</div>
-+ const Test = ({ text, classes }: Props): React.ReactNode => <div>{text}</div>
+- const Test = ({ text }: Props): React.ReactNode => {
++ const TestWithStyles = ({ text, classes }: Props): React.ReactNode => {
+  <div>{text}</div>
+}
 
-+ const TestWithStyles = withStyles(styles)(Test)
-
-- const Consumer = () => <Test text="binding" />
-+ const Consumer = () => <TestWithStyles text="binding" />
++ const Test = withStyles(styles)(TestWithStyles)
 ```
 
 ## Box (Set up @material-ui/system)
