@@ -5,8 +5,13 @@ import applyTransform from '@vscodeshift/apply-jscodeshift'
 
 export function activate(context: vscode.ExtensionContext): void {
   context.subscriptions.push(
-    vscode.commands.registerCommand('extension.addStyles', () =>
-      applyTransform(require('material-ui-codemorphs/addStyles'))
+    vscode.commands.registerCommand('extension.useStyles', () =>
+      applyTransform(require('material-ui-codemorphs/useStyles'))
+    )
+  )
+  context.subscriptions.push(
+    vscode.commands.registerCommand('extension.withStyles', () =>
+      applyTransform(require('material-ui-codemorphs/withStyles'))
     )
   )
   context.subscriptions.push(

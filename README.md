@@ -10,11 +10,67 @@ sweet codemod commands for everyday work with Material UI ✨
 
 # Commands
 
-## Wrap in withStyles
+## Add useStyles hook
 
-Position the cursor inside a funcitonal component before running this command. (_Class components aren't supported yet_)
+Position the cursor inside a funcitonal component before running this command.
 
 Wraps the functional component in `withStyles`,
+adds a `const styles = (theme: Theme) => ({ })` declaration,
+and adds a `classes` type annotation and prop destructuring if possible.
+
+Supports Flow, TypeScript, and plain JS!
+
+### Configuration
+
+You can override where the `Theme` type is imported from by adding the following to your `package.json`:
+
+```json
+{
+  "material-ui-codemorphs": {
+    "themeImport": "import { type Theme } from './src/universal/theme'"
+  }
+}
+```
+
+### Example
+
+```tsx
+import * as React from 'react'
+
+interface Props {
+  text: string
+}
+
+export const Test = ({ text }: Props): React.ReactNode => <div>{text}</div>
+```
+
+![addStyles command](addStyles.png)
+
+```diff
+import * as React from 'react'
+
++ import { makeStyles, Theme } from '@material-ui/core/styles'
+
+interface Props {
+  text: string
+}
+
++ const useStyles = makeStyles((theme: Theme) => ({}))
+
+- export const Test = ({ text }: Props): React.ReactNode => (
+-   <div>{text}</div>
+- )
++ export const Test = ({ text }: Props): React.ReactNode => {
++   const classes = useStyles()
++   return <div>{text}</div>
++ }
+```
+
+## Wrap in withStyles
+
+Position the cursor inside a component before running this command.
+
+Wraps the component in `withStyles`,
 adds a `const styles = (theme: Theme) => ({ })` declaration,
 and adds a `classes` type annotation and prop destructuring if possible.
 
