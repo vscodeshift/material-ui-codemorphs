@@ -46,13 +46,13 @@
     ],
     "prepare": {
       "path": "semantic-release-vsce",
-      "packageVsix": "@vscodeshift/extension-skeleton.vsix"
+      "packageVsix": "extension-skeleton.vsix"
     },
     "publish": [
       "semantic-release-vsce",
       {
         "path": "@semantic-release/github",
-        "assets": "@vscodeshift/extension-skeleton.vsix"
+        "assets": "extension-skeleton.vsix"
       }
     ]
   },
