@@ -32,6 +32,16 @@ You can override where the `Theme` type is imported from by adding the following
 }
 ```
 
+You can override where `makeStyles` is imported from by adding the following to your `package.json`:
+
+```json
+{
+  "material-ui-codemorphs": {
+    "makeStylesImport": "import { makeStyles } from '@material-ui/core'"
+  }
+}
+```
+
 ### Example
 
 ```tsx
@@ -84,6 +94,16 @@ You can override where the `Theme` type is imported from by adding the following
 {
   "material-ui-codemorphs": {
     "themeImport": "import { type Theme } from './src/universal/theme'"
+  }
+}
+```
+
+You can override where `withStyles` is imported from by adding the following to your `package.json`:
+
+```json
+{
+  "material-ui-codemorphs": {
+    "withStylesImport": "import { withStyles } from '@material-ui/core'"
   }
 }
 ```
