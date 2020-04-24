@@ -1392,10 +1392,10 @@
     semver "^6.3.0"
     tsutils "^3.17.1"
 
-"@vscodeshift/apply-jscodeshift@^1.0.11":
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/@vscodeshift/apply-jscodeshift/-/apply-jscodeshift-1.0.14.tgz#597fa03b0dc245b4db0775ce7eba9a1f5be694fa"
-  integrity sha512-/hv0kWpNP7+PAqFDb4t/CpPX6HqA4bQSgoN1o3LZR/HiDw+33Mxv5DbB/fE9zpFFA4fwJ8eXWH51q2CCqOzkIg==
+"@vscodeshift/apply-jscodeshift@^1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@vscodeshift/apply-jscodeshift/-/apply-jscodeshift-1.0.15.tgz#c169d516fd9e11c0e8de9ebfbe25675a1f3afa09"
+  integrity sha512-8Lq3zOSyLGATZtKGMsa5HGxUxwfYf+MVq5+hSxd01pNzpl5ooE8PEwZXTLpUdzbv/jU+8g/EUooEbR3JdjTfTg==
   dependencies:
     "@babel/runtime" "^7.1.5"
     jscodeshift-choose-parser "^1.0.1"
