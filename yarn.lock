@@ -1393,9 +1393,9 @@
     tsutils "^3.17.1"
 
 "@vscodeshift/apply-jscodeshift@^1.0.15":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@vscodeshift/apply-jscodeshift/-/apply-jscodeshift-1.0.16.tgz#4f68224d0c1e48ee356fbd8948927712559ce890"
-  integrity sha512-B4e3jiklvwqWQLVKoCBwhJsqQ7GjJdoazKMmpgaBQK3wvjNKc/mMSN6Faex584SJRXBY2qMv1aZNpGGDn0VOmA==
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@vscodeshift/apply-jscodeshift/-/apply-jscodeshift-1.0.17.tgz#8a44137cd0364c86170ae098b84e9d5dde78a393"
+  integrity sha512-cBOVFa4eSI2M3xGrz9nMKUL4Fjcp3ND8nqSuX/Rrm730b63ZWhn+IDnhf9p61JzADtawxG84O7mDMNzDj/+3MQ==
   dependencies:
     "@babel/runtime" "^7.1.5"
     jscodeshift-choose-parser "^2.0.0"
